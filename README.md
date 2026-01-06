@@ -9,7 +9,11 @@ RunPodでローカルLLM（gpt-oss-20b等）を動かすためのセットアッ
 - GPU: **RTX 4090**（24GB）推奨
 - Template: **RunPod Pytorch 2.x**
 
-### 2. インストール
+### 2. Webターミナルに接続
+- Podの **Connect** → **Web Terminal**
+- ターミナルが開いたら以下を実行
+
+### 3. インストール
 ```bash
 git clone https://github.com/Aporo89/runpod-setup.git
 cd runpod-setup
@@ -17,16 +21,16 @@ bash scripts/setup.sh
 source ~/.bashrc
 ```
 
-### 3. LLMを実行
+### 4. LLMを実行
 ```bash
 ollama pull gpt-oss:20b
 ollama run gpt-oss:20b
 ```
 
-### 4. Claude Code（オプション）
+### 5. Claude Code認証（オプション）
 ```bash
 claude
-# 初回はAPIキーの設定が必要
+# 表示されるURLをブラウザで開いて認証
 ```
 
 ## インストールされるもの
